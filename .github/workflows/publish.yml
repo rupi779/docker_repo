@@ -12,7 +12,3 @@ registry: ghcr.io
 username: ${{ github.actor }}
 password: ${{ secrets.G_TOKEN }}
 - name: Build the hello-docker Docker image
-run: |
-       docker build . --tag ghcr.io/${{ github.actor }}/docker_repo:latest
-       docker run ghcr.io/${{ github.actor }}/docker_repo:latest
-       docker push ghcr.io/${{ github.actor }}/docker_repo:latest
